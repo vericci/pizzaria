@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIZZARIA HASH</title>
-    <script src="https://kit.fontawesome.com/7807c17e4f.js" crossorigin="anonymous"></script>
+    <title>Landing Page Pizzaria</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/pizza.png" type="image/x-icon">
 </head>
 
 <body>
-    <!-- header -->
-    <header>
-        <a href="#">
-            <img src="img/logo.jpg" alt="imagem logo pizzaria">
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.jpg" alt="Imagem Logo Pizzaria">
         </a>
-    <!-- ITENS NAVEGAÇÃO -->
+
         <nav>
             <a href="#home">HOME</a>
             <a href="#about">SOBRE</a>
             <a href="#menu">MENU</a>
-            <a href="produts">PROMOÇÔES</a>
-            <a href="review">AVALIAÇÕES</a>
+            <a href="#products">PROMOÇÕES</a>
+            <a href="#review">AVALIAÇÕES</a>
         </nav>
-        <div>
+
+
+        <div class="icons">
             <div>
                 <ion-icon name="people"></ion-icon>
             </div>
@@ -37,134 +38,120 @@
                 <ion-icon name="car"></ion-icon>
             </div>
 
-            <div>
+            <div id="menu-btn">
                 <ion-icon name="menu"></ion-icon>
             </div>
         </div>
-        
+
     </header>
+
+
+
     <main>
+
         <section id="home">
-            <div>
-                <h3>Bem vindo á PizzariaHash</h3>
-                <p>Descubra o sabor autêntico das pizzas artesanais, preparados com ingredientes e de alta qualidade</p>
-                <a href="#">Faça um Pedido</a>
-            </div>
-        </section>
-        <section id="about">
-            <h1>Sobre <span>Nós</span></h1>
-            <div>
-                <img src="img/sobre.jpg" alt="imgem pizzaria">
-            </div>
-            <div>
-                <h3>O que torna a Pizzahash única</h3>
-                <p>Descubra o sabor autêntico das nossas pizzas artesanais, preparadas com ingredientes frescos e de alta qualidade.</p>
-                <p>Descubra o sabor autêntico das nossas pizzas artesanais, preparadas com ingredientes frescos e de alta qualidade.</p>
-                <a href="#">Saiba Mais</a>
+
+            <div class="content">
+                <h3>Bem Vindo á PizzaHash</h3>
+
+                <p>Descubra o sabor autêntico das nossas pizzas artesanais, preparadas com ingredientes frescos e de
+                    alta qualidade.</p>
+
+                <a href="#" class="btn">Faça um Pedido</a>
             </div>
         </section>
 
-        <section id="menu">
-            <h2>Nosso <span>Menu</span></h2>
-          
 
-           <div class="box-container">
 
-               
-               <div class="box">
-                   <img src="img/pizza_item_1.jpg" alt="imagem 1">
-                   <h3>Explosão de Pepperoni</h3>
-                   <div> 55.99$ <span>60.99$</span></div>
-                   <a href="">Adicionar Ao carrinho</a>
+        <section id="about" class="about">
+            <h1 class="heading">Sobre <span>Nós</span></h1>
+
+            <!-- div adicionada -->
+            <div class="row">
+
+                <div class="img">
+                    <img src="images/sobre.jpg" alt="Imagem Pizzaria">
                 </div>
-                
+
+                <div class="content">
+                    <h3>O que torna a Pizzahash única</h3>
+
+                    <p>Descubra o sabor autêntico das nossas pizzas artesanais, preparadas com ingredientes frescos e de
+                        alta qualidade</p>
+
+                    <p>Descubra o sabor autêntico das nossas pizzas artesanais, preparadas com ingredientes frescos e de
+                        alta qualidade</p>
+
+                    <a href="#" class="btn">Saiba Mais</a>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+        <section id="menu" class="menu">
+            <h2 class="heading">Nosso <span>Menu</span></h2>
+
+            <div class="box-container">
+
+
+                <div class="box">
+                    <img src="img/pizza_item_1.jpg" alt="imagem 1">
+                    <h3>Explosão de Pepperoni</h3>
+                    <div class="price"> 55.99$ <span>60.99$</span></div>
+                    <a href="" class="btn">Adicionar Ao carrinho</a>
+                </div>
+
                 <div class="box">
                     <img src="img/pizza_item_2.jpg" alt="imagem 2">
                     <h3>Aventura Gevetais</h3>
-                    <div> 45.99$ <span>60.99$</span></div>
-                    <a href="">Adicionar Ao carrinho</a>
+                    <div class="price"> 45.99$ <span>60.99$</span></div>
+                    <a href="" class="btn">Adicionar Ao carrinho</a>
                 </div>
-                
+
                 <div class="box">
                     <img src="img/pizza_item_3.jpg" alt="imagem 3">
                     <h3>EMediterrânea Delícia</h3>
-                    <div> 75.99$ <span>89.99$</span></div>
-                    <a href="">Adicionar Ao carrinho</a>
+                    <div class="price"> 75.99$ <span>89.99$</span></div>
+                    <a href="" class="btn">Adicionar Ao carrinho</a>
                 </div>
-                
+
                 <div class="box">
                     <img src="img/pizza_item_4.jpg" alt="imagem 4">
                     <h3>Pomodoro do Campo</h3>
-                    <div> 55.99$ <span>60.99$</span></div>
-                    <a href="">Adicionar Ao carrinho</a>
+                    <div class="price"> 55.99$ <span>60.99$</span></div>
+                    <a href="" class="btn">Adicionar Ao carrinho</a>
                 </div>
-                
+
                 <div class="box">
                     <img src="img/pizza_item_5.jpg" alt="imagem 5">
                     <h3>Lusitana Colorida</h3>
-                    <div> 55.99$ <span>60.99$</span></div>
-                    <a href="">Adicionar Ao carrinho</a>
+                    <div class="price"> 55.99$ <span>60.99$</span></div>
+                    <a href="" class="btn">Adicionar Ao carrinho</a>
                 </div>
-                
+
                 <div class="box">
                     <img src="img/pizza_item_6.jpg" alt="imagem 6">
                     <h3>Saborosa Lava</h3>
-                    <div> 85.99$ <span>99.99$</span></div>
-                    <a href="">Adicionar Ao carrinho</a>
+                    <div class="price"> 85.99$ <span>99.99$</span></div>
+                    <a href="" class="btn">Adicionar Ao carrinho</a>
                 </div>
-                
-            </div>   
-            
+
+            </div>
         </section>
 
-        <section id="products">
-            <h2>Comos e <span>Promoções</span></h2>
+
+        <section id="products" class="products">
+            <h2 class="heading">Combos e <span>Promoções</span></h2>
 
             <div class="box-container">
 
                 <div class="box">
 
-                    <div>
-
-                        <a href="#">
-                            <ion-icon name="car"></ion-icon>
-                        </a>
-
-                        <a href="#">
-                            <ion-icon name="heart"></ion-icon>
-                        </a>
-
-                        <a href="#">
-                            <ion-icon name="eye"></ion-icon>
-                        </a>
-
-                    </div>
-
-
-                    <div>
-                        <img src="img/promo_1.jpg" alt="Pizza com coca-cola">
-                    </div>
-
-                    <div>
-                        <h3>Pizza+Refrigerante 2L</h3>
-
-                        <div>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                        </div>
-                    </div>
-
-                    <div>65.00$ <span>a partir</span></div>
-
-                </div>
-
-
-
-                <div class="box">
-
-                    <div>
+                    <div class="icons">
 
                         <a href="#menu">
                             <ion-icon name="car"></ion-icon>
@@ -181,30 +168,70 @@
                     </div>
 
 
-                    <div>
+                    <div class="image">
+                        <img src="img/promo_1.jpg" alt="Pizza com coca-cola">
+                    </div>
+
+                    <div class="content">
+                        <h3>Pizza+Refrigerante 2L</h3>
+
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="price">65.00$ <span>a partir</span></div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="box">
+
+                    <div class="icons">
+
+                        <a href="#menu">
+                            <ion-icon name="car"></ion-icon>
+                        </a>
+
+                        <a href="#menu">
+                            <ion-icon name="heart"></ion-icon>
+                        </a>
+
+                        <a href="">
+                            <ion-icon name="eye"></ion-icon>
+                        </a>
+
+                    </div>
+
+
+                    <div class="image">
                         <img src="img/promo_2.jpg" alt="Pizza com coca-cola">
                     </div>
 
-                    <div>
+                    <div class="content">
                         <h3>Pizza+Refrigerante 350ML</h3>
 
-                        <div>
+                        <div class="stars">
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star-half"></ion-icon>
                         </div>
+                        <div class="price">50.00$ <span>a partir</span></div>
                     </div>
 
-                    <div>50.00$ <span>a partir</span></div>
 
                 </div>
 
 
                 <div class="box">
 
-                    <div>
+                    <div class="icons">
 
                         <a href="#menu">
                             <ion-icon name="car"></ion-icon>
@@ -221,14 +248,14 @@
                     </div>
 
 
-                    <div>
+                    <div class="image">
                         <img src="img/promo_3.jpg" alt="Pizza com coca-cola">
                     </div>
 
-                    <div>
+                    <div class="content">
                         <h3>Pizza+Refrigerante 600mL</h3>
 
-                        <div>
+                        <div class="stars">
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
@@ -236,19 +263,21 @@
                             <ion-icon name="star"></ion-icon>
 
                         </div>
+                        <div class="price">55.00$ <span>a partir</span></div>
                     </div>
 
-                    <div>55.00$ <span>a partir</span></div>
 
                 </div>
 
             </div>
 
+
         </section>
 
-        <section id="review">
 
-            <h2>O que nosso<span>Clientes Dizem</span></h2>
+        <section id="review" class="review">
+
+            <h2 class="heading">O que nossos <span>Clientes Dizem</span></h2>
 
 
             <div class="box-container">
@@ -258,14 +287,18 @@
                         illo dolorum temporibus optio asperiores minima soluta sequi. Quos, eos laboriosam? Libero,
                         nulla tenetur? Quasi dolorum harum distinctio!</p>
 
-                    <img src="img/cliente_1.jpg" alt="user 1">
+                    <img src="img/cliente_1.jpg" alt="user 1" class="user">
 
                     <h3>Padre Rosalvino</h3>
 
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    <div class="stars">
+
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+
                 </div>
 
 
@@ -274,15 +307,17 @@
                         illo dolorum temporibus optio asperiores minima soluta sequi. Quos, eos laboriosam? Libero,
                         nulla tenetur? Quasi dolorum harum distinctio!</p>
 
-                    <img src="img/cliente_2.jpg" alt="user 2">
+                    <img src="img/cliente_2.jpg" alt="user 2" class="user">
 
                     <h3>Igor Araujo</h3>
+                    <div class="stars">
 
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
                 </div>
 
 
@@ -293,23 +328,24 @@
                         illo dolorum temporibus optio asperiores minima soluta sequi. Quos, eos laboriosam? Libero,
                         nulla tenetur? Quasi dolorum harum distinctio!</p>
 
-                    <img src="img/cliente_3.jpg" alt="user 3">
+                    <img src="img/cliente_3.jpg" alt="user 3" class="user">
 
                     <h3>Leandro Gouveia</h3>
+                    <div class="stars">
 
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
                 </div>
 
             </div>
-            
-        </section>
-        
-        
-    </main>
 
+        </section>
+
+
+    </main>
 
 
     <footer class="footer">
@@ -404,13 +440,14 @@
 
 
 
-
-
-                
-
-    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
 </body>
+
 </html>
- 
