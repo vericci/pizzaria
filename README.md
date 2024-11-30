@@ -1,3 +1,3 @@
 # pizzaria
  aula de revisâo
-  <a href="">link da página</a>
+  <a href="https://vericci.github.io/pizzaria/">link da página</a>
