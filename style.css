@@ -220,11 +220,11 @@ z-index: 1;
 
 
 
-.row .image {
+.row .img {
     flex: 1 1 45rem;
 }
 
-.row .image img {
+.row .img img {
     width: 100%;
 
 }

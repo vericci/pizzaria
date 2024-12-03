@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*DEFINE VARIAVEIS GLOBAIS PARA CORES E BORDAS  A MAUTENÇÃO  E AJSUTES FUTUROS*/
+
+:root {
+    --main-color: #da190f;
+    --br: #13131a;
+    --bg-card: #0c0c14;
+    --border: 0.1rem solid gray;
+}
+
+/*remove margens, paddins e bordas padroes.
+define o comportamneto*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    text-transform: capitalize;/*letras masiculas*/
+    transition: 0.2s linear;/*Transição habilitada por padrão*/
+    font-family: 'roboto', 'sans-serif';
+    outline: none; /*Define a caixas e informamos sem contorno*/
+}
+
+html {
+    font-size: 62.5%;/*configura o fonte size para 62.5%, facilita o uso do rem (1rem =10px)*/
+    overflow-x: hidden; /*evita a rolagem horizontal. hidden (itens não estouram)*/
+    scroll-behavior: smooth; /*adiciona comportamento de rolagem suave*/
+    scroll-padding-top: 9rem;/*é usado coo alienado ao scroll-smooth para dar uma melhor visualização do scroll*/
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;/*Personalixa o estilo da barra de rolagem no webkit*/
+
+}
+
+html::-webkit-scrollbar-track {/*personaliza o estilo da barra de rolagem no web kit*/
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--br); /*Define o fundo da página com a variável*/
+}
+
+section {
+    padding: 2rem 7%;
+
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase; /*texto em caixa alta*/
+    padding-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-decoration: uppercase;
+    
+}
+
+.btn {
+    padding: 0.9rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    display: inline-block;
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem; /*Espaçamento entre as letras*/
+}
+
+.header{
+    background: var(--br);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header .logo img{
+    height: 6.5rem;
+    border-radius: 100%;
+}
+
+.header nav a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header nav a:hover {
+    color: var(--main-color);/*muda a cor do ver*/
+    border-bottom: 0.1rem solid var(--main-color); /*Adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem; /*adiciona espaçamento inferior no hover*/
+}
+
+.header .icons div {
+    margin-left: 2rem;
+}
+
+.header .icons div ion-icon {
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.header .icons div ion-icon:hover {
+    color: var(--main-color);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+#menu-btn {
+    display: none;
+}
+
+/*section home*/
+
+#home {
+    position: relative;
+    min-height: 85vh;
+    display: flex; 
+    align-items: center;
+    background: url(img/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: var(--border);
+}
+
+#home::before {
+    content: ""; /*adicona pseudo-elemnto vazio*/
+    position: absolute; /*permite posionamentoabsoluto*/
+    top: 0;  /*alinha o topo*/ 
+    left: 0;/*alinha a esquerda*/
+    width:100%; /*ocupa toda a largura*/
+    height:100%; /*ocupa toda a altura*/
+    background: rgba(0, 0, 0, 0.5); /*adicina sobreposição escura */
+    z-index: 1; /*posiona abaixo do conteudo eixo z*/
+}
+
+.content {
+    max-width: 60rem; /*Define largura máxima*/
+    position: relative; /*Permite manipular a posição*/
+    z-index: 2; /*Grante que o conteudo fique acima da sobreposição*/
+}
+.content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.content p {
+    font-size: 2rem;
+    font-weight: lighter; /*peso da fonte mais leve*/
+    line-height: 1.8; /*Espaçamento entre as linha*/
+    padding: 1rem 0; 
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background: var(--bg-card);
+    flex-wrap: wrap;
+    border: var(--border);
+}
+
+
+
+.row .img {
+    flex: 1 1 45rem;
+}
+
+.row .img img {
+    width: 100%;
+
+}
+
+.row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+
+.row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.row .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+}
+
+.menu .box-container {
+    display: grid; /*Organização oslemntos internos em um layaout de grade*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5;
+}
+
+.box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--bg-card);
+    background: var(--bg-card);
+}
+
+.box img {
+    height: 18rem;
+    border-radius: 100%;
+}
+
+.box h3 {
+    color: #fff;
+    font: 2rem;
+    padding: 1rem 0;
+}
+
+.box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;/*aplicamos linha para indicar preço riscado*/
+    font-weight: lighter; /*aplica um peso de fonte mais fino*/
+}
+
+.box:hover {
+    background: #fff;
+}
+
+.box:hover > * {
+    color: black;
+}
