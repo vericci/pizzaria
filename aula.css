@@ -437,3 +437,45 @@ section {
     color: #ccc;
 
 }
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header nav{
+        position: absolute; /*adicionar esse codigo quando entrar JS*/
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
